@@ -1,5 +1,6 @@
 @use './variables' as *;
 
+// Reset básico y configuraciones globales
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,6 +16,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+// Estilos personalizados para la barra de desplazamiento
 ::-webkit-scrollbar {
     width: 8px;
 }

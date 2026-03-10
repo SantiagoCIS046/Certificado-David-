@@ -1,9 +1,9 @@
 <script setup>
-import LoginSupervisor from './views/LoginSupervisor.vue';
+import { RouterView } from 'vue-router'; // Componente que renderiza la ruta actual
 </script>
 
 <template>
-  <LoginSupervisor />
+  <RouterView /> <!-- Punto de montaje para las páginas del enrutador -->
 </template>
 
 <style>

@@ -31,7 +31,7 @@ const handleLogin = () => {
 <template>
   <div class="login-container">
     <div class="login-card">
-      <!-- Left Section: Brand & Branding -->
+      <!-- Sección Izquierda: Marca y Mensaje Corporativo -->
       <div class="brand-section">
         <div class="brand-header">
           <div class="brand-logo">
@@ -60,7 +60,7 @@ const handleLogin = () => {
         </div>
       </div>
 
-      <!-- Right Section: Login Form -->
+      <!-- Sección Derecha: Formulario de Inicio de Sesión -->
       <div class="form-section">
         <div class="form-header">
           <h2>INICIO DE SESIÓN</h2>
@@ -147,6 +147,7 @@ const handleLogin = () => {
 <style lang="scss" scoped>
 @use '../styles/variables' as *;
 
+// Contenedor principal a pantalla completa
 .login-container {
   height: 100vh;
   width: 100vw;
@@ -155,18 +156,19 @@ const handleLogin = () => {
   justify-content: center;
   background-color: #E9ECEF;
   overflow: hidden;
-  padding: 0; // Removed padding to maximize screen usage
+  padding: 0; // Sin padding para usar toda la pantalla
 }
 
+// Tarjeta de login que divide la pantalla
 .login-card {
   width: 100%;
   height: 100%;
   background: $color-white;
   display: grid;
-  grid-template-columns: 65% 35%; // Even narrower form section
+  grid-template-columns: 65% 35%; // El panel de marca ocupa el 65%
   overflow: hidden;
-  box-shadow: none; // Removed shadow for full-screen look
-  border-radius: 0; // Removed border-radius for full-screen look
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .brand-section {
